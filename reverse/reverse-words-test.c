@@ -38,7 +38,7 @@ int main(){
 	free(sentence2);	
 
 	char* sentence3 = " a b c d e fghijk lmno pqrs ";
-	char message3[strlen(sentence2)];
+	char message3[strlen(sentence3)];
 	strncpy(message3,sentence3,strlen(sentence3));
     int sentenceLength3 = strlen(sentence3);
     message3[sentenceLength3] = '\0';
