@@ -41,10 +41,10 @@ int main(){
 	char message3[strlen(sentence2)];
 	strncpy(message3,sentence3,strlen(sentence3));
     int sentenceLength3 = strlen(sentence3);
-    message3[sentenceLength2] = '\0';
+    message3[sentenceLength3] = '\0';
     reverse_words(message3);
     printf("%s\n",message3);
-	// assert(strncmp(" pqrs lmno fghijk e d c b a ", message3, sentenceLength3) == 0);
+    assert(strncmp(" pqrs lmno fghijk e d c b a ", message3, sentenceLength3) == 0);
 	free(sentence3);
 
     return 0;
