@@ -74,19 +74,9 @@ int main(int argc, char **argv) {
         counter += 1;
         if (counter % 500 == 0) {
             counter = 0;
-            //printf("\033[2J\033[1;1H");
-            //printf("Current Solution\n");
-            //printSolution(solution);
-            //printf("\n");
         }
-        //printf("Currently on day %i, row %i, col %i.\n", currentDay, currentRow, currentColumn);
-        //printf("Solution looks like \n");
-        //printSolution(solution);
-        //printf("adjacency Table looks like\n");
-        //printAdjacencyTable(adjacencyTable);
         success = fillInEntry(currentDay, currentRow, currentColumn, solution, adjacencyTable, unavailable);
         if (success) {
-            //printf("Yay!\n\n");
             // ..if viable, go to next spot...
             goToNextEntry();
             // .. If we finished the last day, we're done...
@@ -105,7 +95,6 @@ int main(int argc, char **argv) {
                 return 0;
             }
         } else {
-            //printf("Fuck!\n\n");
             // .. else back track...
             // When we back track, we have to skip over the
             // fixed days.
