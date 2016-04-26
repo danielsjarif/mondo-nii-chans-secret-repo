@@ -9,3 +9,20 @@ best(v)← best(u)+1
 if dist(v)=dist(u)+l(u, v) then
 if best(v)>best(u)+1 then
 best(v)← best(u)+1
+
+#5
+
+mondo = []
+
+str = "A,B,3|C,A,4|B,C,5|D,E,2|E,A,6"
+
+l = list(str.replace(',','').replace('|',''))
+
+for i,n in enumerate(l):
+	if l[i].isdigit():
+		l[i] = int(l[i])
+
+mondo = [l[x:x+3] for x in range(0, len(l),3)]
+
+print(mondo)
+print(l)
