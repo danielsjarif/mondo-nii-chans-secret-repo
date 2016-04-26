@@ -49,7 +49,15 @@ for i in initial:
 print(steps)
 
 ```
+##Problem 2
+a. 
+![alt tag](http://i.imgur.com/27T0mTf.png)
 
+b.
+![alt tag](http://i.imgur.com/OQY7rdq.png)
+
+##Problem 3
+![alt tag](http://i.imgur.com/rlxhMXY.png)
 
 
 ##Problem 4
