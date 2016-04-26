@@ -1,0 +1,11 @@
+#4
+
+while Q is not empty do
+u ← vertex in Q with smallest dist[]
+for all edges (u, v) ∈ E do
+if dist(v)>dist(u)+l(u, v) then
+dist(v)← dist(u)+l(u, v)
+best(v)← best(u)+1
+if dist(v)=dist(u)+l(u, v) then
+if best(v)>best(u)+1 then
+best(v)← best(u)+1
