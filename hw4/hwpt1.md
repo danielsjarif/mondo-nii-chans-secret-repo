@@ -39,7 +39,6 @@ for i in initial:
 				steps.append(command)
 				command = "T"
 				break
-
 			for item in results:
 				temp = initial
 				if initial == item:
