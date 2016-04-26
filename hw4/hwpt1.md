@@ -9,7 +9,6 @@ commands = ["10", "7", "4"]
 steps = []
 command = "T"
 results.append(initial)
-
 for i in initial:
 	if initial[i] == 0:
 		i+=1
